@@ -279,96 +279,83 @@ body {
 }
 
 
+/* Адаптивность
 
-------------------------------------------
+*/
+
+@media(max-width: 900px) {
+
+  .header {
+  margin-top: 50px;
+  }
 
 
-.events-test {
+  .join {
+    padding: 5%;
+    background-color: #EDE5DA;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .join-img {
+    float: center;
+    width: 100%;
+  }
+
+  .events {
   padding: 5%;
   background-color: #D2B589;
-}
+  }
 
-.events-test h2 {
-  font-size: 40px;
-  color: white;
-}
+  .events h2 {
+    font-size: 40px;
+    color: white;
+  }
 
-.events-container-test {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: stretch;
-  gap: 10px 10px;
-}
+  .events-container {
+    display: flex;
+    flex-direction: column;
+  }
 
-.event-test {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 60% 30% 10px;
-  border: 4px solid #212E51;
-  border-radius: 6px;
-  background-color: #EDE5DA;
-  gap: 5px 5px;
-  min-height: 250px;
-}
+  .event {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 70% 20% 10px;
+    border: 4px solid #212E51;
+    border-radius: 6px;
+    background-color: #EDE5DA;
+    gap: 5px 5px;
+    min-height: 300px;
+  }
 
-.event-test img {
-  grid-column: 1 / 3;
-  justify-self: stretch;
-  align-self: center;
-  padding: 5px;
-}
+  .event-big {
+    flex-wrap: wrap;
+  }
 
-.event-test h3 {
-  font-size: 20px;
-  grid-column: 3 / 8;
-  justify-self: center;
-  align-self: center;
-  color: #212E51;
-  padding: 5px;
-}
-
-
-.event-buttons-test {
+  .event-buttons {
   grid-column: 1 / 8;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-between;
-}
+  }
 
-.event-test .button-yes-test {
-  grid-column: span 1;
-  background-color: #4CAF50; /* Зеленый */
+.button-multiple {
+  grid-column: span 2;
+  background-color: #212E51;
   border: none;
   color: white;
   text-align: center;
-  display: inline-block;
   font-size: 14px;
   border-radius: 4px;
-  margin: 0px 10px;
+  margin: 3px 3px;
+  }
+
+
 }
 
-.event-test .button-no-test {
-  grid-column: span 1;
-  background-color: red;
-  border: none;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
-  margin: 0px 10px;
-}
 
-.event-test .button-multiple-test {
-  grid-column: span 1;
-  background-color: red;
-  border: none;
-  color: white;
-  text-align: center;
-  display: inline-block;
-  font-size: 14px;
-  border-radius: 4px;
-  margin: 5px 5px;
-}
 
+------------------------------------------
