@@ -302,6 +302,11 @@ body {
   border: 3px solid #212E51;
 }
 
+.construction {
+  height: 100%;
+  background-color: #EDE5DA;
+}
+
 
 /* Адаптивность
 
