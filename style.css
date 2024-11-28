@@ -60,17 +60,35 @@ body {
   text-decoration: none;
 }
 
+.navbar img {
+  float: left;
+  display: block;
+  padding: 4px 16px;
+}
+
 .navbar a:hover {
   background: #D2B589;
   color: black;
 }
 
+.logo img {
+  margin: auto;
+}
+
 .header {
-  padding: 5%;
   justify-content: center;
   justify-content: center;
   background-color: #EDE5DA;
+  display: flex;
+  flex-direction: row;
 }
+
+.description {
+  padding: 5%;
+  align-self: center;
+}
+
+
 
 .header h1 {
   color: #212E51;
@@ -79,6 +97,11 @@ body {
 
 .header p {
   font-size: 24px;
+}
+
+.line {
+  background-color: #D2B589;
+  height: 5%;
 }
 
 
@@ -145,7 +168,6 @@ body {
 }
 
 .event:hover {
-  transform: scale(1.01);
   background-color: #E8E5E0;
   transition: 0.2s;
 }
@@ -174,7 +196,7 @@ body {
 
 .event .button-yes {
   grid-column: 2 / 4;
-  background-color: #4CAF50; /* Зеленый */
+  background-color: #9EB17A; /* Зеленый */
   border: none;
   color: white;
   text-align: center;
@@ -191,12 +213,12 @@ body {
     background-color: white; /* Зеленый */
     color: black;
     font-size: 16px;
-    border: 3px solid #4CAF50;
+    border: 3px solid #9EB17A;
 }
 
 .event .button-no {
   grid-column: 5 / 7;
-  background-color: red;
+  background-color: #988D8D;
   border: none;
   color: white;
   text-align: center;
@@ -212,7 +234,7 @@ body {
   background-color: white; /* Зеленый */
   color: black;
   font-size: 16px;
-  border: 3px solid red;
+  border: 3px solid #988D8D;
 }
 
 .event .button-multiple-1 {
@@ -268,6 +290,8 @@ body {
   font-size: 14px;
   border-radius: 4px;
   margin: 3px 3px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
 }
 
 .button-multiple:hover {
@@ -289,6 +313,15 @@ body {
   margin-top: 50px;
   }
 
+  .header {
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+  }
+
+  .header-logo {
+    float: center;
+    width: 100%;
+  }
 
   .join {
     padding: 5%;
