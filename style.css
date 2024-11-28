@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "Aino";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Aino-Regular"),
+       /* Если не получилось, загрузит woff2 */
+       url("fonts/Aino-Regular.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("fonts/Aino-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Aino-Bold";
+  font-style: bold;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Aino-Bold"),
+       /* Если не получилось, загрузит woff2 */
+       url("fonts/Aino-Bold.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("fonts/Aino-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Aino-Headline";
+  font-style: bold;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Aino-Headline"),
+       /* Если не получилось, загрузит woff2 */
+       url("fonts/Aino-Headline.woff2") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("fonts/Aino-Headline.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #212E51;
+  position: fixed; /* Установите навигационную панель в фиксированное положение */
+  top: 0; /* Расположите навигационную панель в верхней части страницы */
+  width: 100%; /* Полная ширина */
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: #D2B589;
+  color: black;
+}
+
+.header {
+  padding: 5%;
+  justify-content: center;
+  justify-content: center;
+  background-color: #EDE5DA;
+}
+
+.header h1 {
+  color: #212E51;
+  font-size: 50px;
+}
+
+.header p {
+  font-size: 24px;
+}
+
+
+.join {
+  padding: 5%;
+  background-color: #EDE5DA;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+.join-img {
+  float: left;
+  width: 33%;
+}
+
+.join-text {
+  margin: 15px 15px;
+  display: inline;
+}
+
+.join h2 {
+  font-size: 40px;
+  color: #212E51;
+}
+
+.join p {
+  font-size: 22px;
+}
+
+.events {
+  padding: 5%;
+  background-color: #D2B589;
+}
+
+.events h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.events-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  gap: 10px 10px;
+  grid-auto-flow: row dense;
+}
+
+.event {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 70% 20% 10px;
+  border: 4px solid #212E51;
+  border-radius: 6px;
+  background-color: #EDE5DA;
+  gap: 5px 5px;
+  min-height: 190px;
+}
+
+.event-big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.event:hover {
+  transform: scale(1.01);
+  background-color: #E8E5E0;
+  transition: 0.2s;
+}
+
+.event img {
+  grid-column: 1 / 3;
+  justify-self: stretch;
+  align-self: center;
+  padding: 10px 10px;
+}
+
+.event h3 {
+  font-size: 20px;
+  grid-column: 3 / 8;
+  justify-self: center;
+  align-self: center;
+  color: #212E51;
+  padding: 10px 10px;
+  margin: 10px 10px;
+}
+
+.event h3:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.event .button-yes {
+  grid-column: 2 / 4;
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.event .button-yes:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: white; /* Зеленый */
+    color: black;
+    font-size: 16px;
+    border: 3px solid #4CAF50;
+}
+
+.event .button-no {
+  grid-column: 5 / 7;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.event .button-no:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white; /* Зеленый */
+  color: black;
+  font-size: 16px;
+  border: 3px solid red;
+}
+
+.event .button-multiple-1 {
+  justify-self: stretch;
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  grid-column: 2 / 3;
+}
+
+.event .button-multiple-2 {
+  justify-self: stretch;
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  grid-column: 4 / 5;
+}
+
+.event .button-multiple-more {
+  justify-self: stretch;
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  grid-column: 6 / 7;
+}
+
+.event-buttons {
+  grid-column: 1 / 8;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  justify-content: space-between;
+}
+
+.button-multiple {
+  grid-column: span 1;
+  background-color: #212E51;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 3px 3px;
+}
+
+.button-multiple:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  border: 3px solid #212E51;
+}
+
+
+
+------------------------------------------
+
+
+.events-test {
+  padding: 5%;
+  background-color: #D2B589;
+}
+
+.events-test h2 {
+  font-size: 40px;
+  color: white;
+}
+
+.events-container-test {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: stretch;
+  gap: 10px 10px;
+}
+
+.event-test {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 60% 30% 10px;
+  border: 4px solid #212E51;
+  border-radius: 6px;
+  background-color: #EDE5DA;
+  gap: 5px 5px;
+  min-height: 250px;
+}
+
+.event-test img {
+  grid-column: 1 / 3;
+  justify-self: stretch;
+  align-self: center;
+  padding: 5px;
+}
+
+.event-test h3 {
+  font-size: 20px;
+  grid-column: 3 / 8;
+  justify-self: center;
+  align-self: center;
+  color: #212E51;
+  padding: 5px;
+}
+
+
+.event-buttons-test {
+  grid-column: 1 / 8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.event-test .button-yes-test {
+  grid-column: span 1;
+  background-color: #4CAF50; /* Зеленый */
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+
+.event-test .button-no-test {
+  grid-column: span 1;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 0px 10px;
+}
+
+.event-test .button-multiple-test {
+  grid-column: span 1;
+  background-color: red;
+  border: none;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 5px 5px;
+}
+
