@@ -16,7 +16,17 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script>
+// Get the modal
+var modal = document.getElementById('id01');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 </head>
 <body>
 	<nav class="navbar">
@@ -62,9 +72,7 @@
 				Не упустите шанс стать частью нашего сообщества! Регистрируйтесь прямо сейчас и начните делать ставки на PANAB.  Ваши выигрыши ждут вас!
 				</p>
 		
-<h1>Модальная форма регистрации</h1>
-
-<h2>Modal Signup Form</h2>
+<h1>Форма регистрации</h1>
 
 <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход</button>
 
@@ -97,17 +105,7 @@
     </div>
   </form>
 </div>
-				<script>
-// Get the modal
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+				
 			</div>
 		</div>
 
