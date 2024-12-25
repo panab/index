@@ -61,6 +61,42 @@
 				<br>
 				Не упустите шанс стать частью нашего сообщества! Регистрируйтесь прямо сейчас и начните делать ставки на PANAB.  Ваши выигрыши ждут вас!
 				</p>
+		
+<h1>Модальная форма регистрации</h1>
+
+<h2>Modal Signup Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+  <form class="modal-content" action="../action_page.php">
+    <div class="container">
+      <h1>Вход</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder=" Ведите Email" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторите пароль</b></label>
+      <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+      </label>
+
+      <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="#" style="color:dodgerblue">Условием и конфиденциальностью</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+        <button type="submit" class="signupbtn">Вход</button>
+      </div>
+    </div>
+  </form>
+</div>
 			</div>
 		</div>
 
