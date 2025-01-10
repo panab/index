@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PANAB</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;900&family=PT+Sans&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</head>
+<body>
+	<nav class="navbar">
+		<img src="logo_head.jpg" height="180px">
+		<div class="nav-buttons">
+			<a href="https://panab.github.io/index/" class="nav-button">Главная</a>
+			<a href="https://panab.github.io/index/#events" class="nav-button">События</a>
+			<a href="https://panab.github.io/index/404.html" class="nav-button">Политика</a>
+			<a href="https://panab.github.io/index/404.html" class="nav-button">Экономика</a>
+			<a href="https://panab.github.io/index/#join" class="nav-button registration-button">Регистрация</a>
+		</div>
+	</nav>
+	<div class="main">
+
+
+
+		<div class="header">
+			<div class="description">
+				<h1>PANAB</h1>
+				<p>
+					<b>«PANAB»</b> — это ведущая аналитическая компания, специализирующаяся на политических ставках и прогнозировании событий в мире политики. 
+					Наша миссия заключается в том, чтобы предоставлять клиентам точные и своевременные прогнозы, основанные на глубоком анализе политических трендов и событий.
+					<br><br>С «PANAB» вы всегда будете на шаг впереди: мы предоставляем не только актуальные прогнозы, но и глубокую аналитику, 
+					которая поможет вам лучше понять динамику политических процессов. Присоединяйтесь к нам, чтобы быть в курсе самых важных 
+					событий и использовать наши знания для достижения успеха в мире политических ставок.
+				</p>
+			</div>
+			<img src="debate.png" width="50%" class="header-logo">
+			
+
+		</div>
+
+		<div class="line"></div>
+
+		<div class="join" id="join">
+			<img src="reg.jfif" width="100%" class="join-img">
+			<div class="join-text">
+				<h2>Присоединяйтесь к PANAB </h2>
+				<p>
+				<ul>
+					<li> <b>Широкий выбор событий:</b> Ставьте на любимые или интересные для вас события в мире политики или экономики</li>
+					<li> <b>Лучшие коэффиценты: </b> Мы предлагаем вам конкурентноспособные ставки, чтобы вы могли выиграть больше!</li>
+					<li> <b>Бонусы для новых игроков: </b> Получите приветственный бонус при первой регистрации</li>
+					<li> <b>Удобный и понятный интерфейс: </b> Лёгкая навигация и понятный дизайн – ставьте в любое время и в любом месте!</li>
+					<li><b>Надежная поддержка: </b> Наша команда поддержки всегда готова помочь вам с любыми вопросами. </li>
+				</ul>
+				<br>
+				Не упустите шанс стать частью нашего сообщества! Регистрируйтесь прямо сейчас и начните делать ставки на PANAB.  Ваши выигрыши ждут вас!
+				</p>
+				<h1>Форма регистрации</h1>
+				<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Вход</button>
+
+			<div id="id01" class="modal">
+			  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Закрыть Modal">&times;</span>
+			  <form class="modal-content" action="../action_page.php">
+			    <div class="container">
+			      <h1>Вход</h1>
+			      <p>Пожалуйста, заполните эти поля для регистрации</p>
+			      <hr>
+			      <label for="email"><b>Email</b></label>
+			      <input type="text" placeholder=" Ведите Email" name="email" required>
+
+			      <label for="psw"><b>Пароль</b></label>
+			      <input type="password" placeholder=" Ведите пароль" name="psw" required>
+
+			      <label for="psw-repeat"><b>Повторите пароль</b></label>
+			      <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+			      
+			      <label>
+			        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Запомнить меня
+			      </label>
+
+			      <p>Создавая учетную запись, вы соглашаетесь с нашим <a href="#" style="color:dodgerblue">Условием и конфиденциальностью</a>.</p>
+
+			      <div class="clearfix">
+			        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+			        <button type="submit" class="signupbtn">Вход</button>
+			      </div>
+			    </div>
+			  </form>
+			</div>
+			</div>
+		</div>
+
+		<div class="line"></div>
+			
+		<div class="event-head">
+			<h2>Основные события</h2>
+			<p>Ставьте на любимые или интересные для вас события в мире политики. Мы предлагаем вам конкурентноспособные коэффициенты, чтобы вы могли заработать больше!</p>
+		</div>
+
+		<div class="events" id="events">
+			<div class="events-container">
+				<div class="event">
+					<img src="nuclear.svg" width="100%">
+					<h3>Ядерное оружие будет использовано в 2025 году</h3>
+					<button class="button-yes" name="yes">ДА / 11.79</button>
+					<button class="button-no" name="no">НЕТ / 1.02</button>
+				</div>
+				<div class="event">
+					<img src="question.jpg" width="100%">
+					<h3>Морское военное вторжение Китая на Тайвань случится в 2025 году</h3>
+					<button class="button-yes" name="yes">ДА / 8.94</button>
+					<button class="button-no" name="no">НЕТ / 1.09</button>
+				</div>
+				<div class="event">
+					<img src="moon.jpg" width="100%">
+					<h3>Человек ступит на поверхность Луны до 1 января 2028 года</h3>
+					<button class="button-yes" name="yes">ДА / 2.77</button>
+					<button class="button-no" name="no">НЕТ / 1.43</button>
+				</div>
+				<div class="event event-big">
+					<img src="usd.jpg" width="100%">
+					<h3>Официальный курс доллара в конце декабря 2024</h3>
+					<div class="event-buttons">
+						<button class="button-multiple" name="multiple">До 90 руб.<br> 94.34</button>
+						<button class="button-multiple" name="multiple">До 100 руб.<br> 9.43</button>
+						<button class="button-multiple" name="multiple">До 110 руб.<br> 2.36</button>
+						<button class="button-multiple" name="multiple">До 120 руб.<br> 1.21</button>
+						<button class="button-multiple" name="multiple">До 130 руб.<br> 1.06</button>
+						<button class="button-multiple" name="multiple">Выше 130 руб.<br> 6.74</button>
+					</div>
+				</div>
+				<div class="event">
+					<img src="biden.webp" width="100%">
+					<h3>Байден захватит власть в США и установит свою диктатуру</h3>
+					<button class="button-yes" name="yes">ДА / 94.34</button>
+					<button class="button-no" name="no">НЕТ / 1.00</button>
+				</div>
+				<div class="event">
+					<img src="question.jpg" width="100%">
+					<h3>Событие Будет ли что-то тогда-то?</h3>
+					<button class="button-yes" name="yes">ДА / 10.93</button>
+					<button class="button-no" name="no">НЕТ / 1.45</button>
+				</div>
+				<div class="event">
+					<img src="lukash.jpg" width="100%">
+					<h3>Аляксандр Лукашэнка перавыберацца Прэзідэнтам Беларусі ў 2025 годзе</h3>
+					<button class="button-yes" name="yes">ДА / 1.01</button>
+					<button class="button-no" name="no">НЕТ / 125.64</button>
+				</div>
+				<div class="event">
+					<img src="question.jpg" width="100%">
+					<h3>Событие Будет ли что-то тогда-то?</h3>
+					<button class="button-yes" name="yes">ДА / 10.93</button>
+					<button class="button-no" name="no">НЕТ / 1.45</button>
+				</div>
+				<div class="event">
+					<img src="question.jpg" width="100%">
+					<h3>Событие Будет ли что-то тогда-то?</h3>
+					<button class="button-yes" name="yes">ДА / 10.93</button>
+					<button class="button-no" name="no">НЕТ / 1.45</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
